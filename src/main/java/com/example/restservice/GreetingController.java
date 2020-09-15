@@ -22,4 +22,10 @@ public class GreetingController {
 		return new Greeting(counter.incrementAndGet(), String.format(template, name));
 	}
 
+
+	@GetMapping("/hellobc")
+	public Greeting hellobc(@RequestParam(value = "name", defaultValue = "OSL") String name) {
+		return new Greeting(counter.incrementAndGet(), String.format(template, name));
+	}
+
 }
