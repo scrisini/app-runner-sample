@@ -24,7 +24,7 @@ public class RestServiceApplication {
   //      port: 8327
 
         // All URLs must be prefixed with the app name, which is got via the APP_NAME env var.
-        String appName = settings.getOrDefault("APP_NAME", "mds-api");
+        String appName = settings.getOrDefault("APP_NAME", "apprunner-hello-world");
 //        server:
   //      port: 8700
 
